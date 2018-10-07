@@ -110,6 +110,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
 
+# Lawnchair
+PRODUCT_PACKAGES += Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/aosp/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
