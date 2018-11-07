@@ -106,6 +106,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker
 
+# Substratum Key
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
