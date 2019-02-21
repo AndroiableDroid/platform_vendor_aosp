@@ -2,6 +2,7 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
 #           (C) 2018 The PixelExperience Project
+#           (C) 2019 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -553,16 +554,20 @@ function write_header() {
         elif [ $INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
             printf "# Copyright (C) $YEAR The LineageOS Project\n" >> $1
             printf "# Copyright (C) $YEAR The PixelExperience Project\n" >> $1
+            printf "# Copyright (C) $YEAR The Evolution X Project\n" >> $1
         elif [ $INITIAL_COPYRIGHT_YEAR -le 2017 ]; then
             printf "# Copyright (C) 2017-$YEAR The LineageOS Project\n" >> $1
             printf "# Copyright (C) 2017-$YEAR The PixelExperience Project\n" >> $1
+            printf "# Copyright (C) 2017-$YEAR The Evolution X Project\n" >> $1
         else
             printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
             printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The PixelExperience Project\n" >> $1
+            printf "# Copyright (C) $INITIAL_COPYRIGHT_YEAR-$YEAR The Evolution X Project\n" >> $1
         fi
     else
         printf "# Copyright (C) $YEAR The LineageOS Project\n" > $1
         printf "# Copyright (C) $YEAR The PixelExperience Project\n" > $1
+        printf "# Copyright (C) $YEAR The Evolution X Project\n" > $1
     fi
 
     cat << EOF >> $1
